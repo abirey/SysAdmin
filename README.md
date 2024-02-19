@@ -109,5 +109,15 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 
      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/6c3a9592-9b8b-4fb9-8a50-0af53a495ea1)
 
+  9. Lakukan langkah yang sama untuk SWAP dan Root Directory, **Khusus Swap perhatikan langkah berikut**
+
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/0e071126-e6be-41fc-8e99-fa93bed9d5d6)
+
+     Pilih OPSI SWAP
+     
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/4f86ad7a-4e4e-420a-b207-5b39a8f76e57)
+
+     
+
 
 
