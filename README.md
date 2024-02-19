@@ -77,25 +77,37 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
   1. Kita disini akan disuguhkan opsi install dengan CLI, Untuk Bagian Bahasa Sesuaikan Preferensi Masing Masing,
       Kemudian Pastikan **HOST : SysAdmin-NRP** disini saya SysAdmin-3122500024
       
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ef00a5a2-d0e4-4d56-8770-3d1653464144)
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ef00a5a2-d0e4-4d56-8770-3d1653464144)
 
   2. Sesuaikan password untuk user **root** anda lalu buatlah satu akun pengguna untuk anda disini saya beri nama *user*
 
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/172be2b1-6fc2-4a2e-b3f9-8e634c332e49)
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/172be2b1-6fc2-4a2e-b3f9-8e634c332e49)
 
   **PARTISI PART**
   
   3. Kemudian kita masuk ke bagian Pembagian Partisi Pilih **MANUAL METHOD** Kemudian Pilih Partisinya disini saya memilih **SCSI3 (0,0,0) (sda) - 37.6 GB ATA VBOX HARDDISK**
       
-  
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/f22f4aaf-6f6e-4200-b31b-4563c603c1e8)
-
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/f22f4aaf-6f6e-4200-b31b-4563c603c1e8)
 
   4. Kemudian muncul prompt Ya Tidak, Pada Bagian ini bisa dijawab Tidak Setelah itu Akan Muncul Partisi Kosong **(FREE SPACE)** Masukkan Angka kemudian tekan enter
 
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/dfe5ac12-adfe-42ad-9406-851b158515d9)
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/dfe5ac12-adfe-42ad-9406-851b158515d9)
 
   5. Setelah Memilih Create New Partition, Masukkan Maximum Size dari disk yang akan dibagi
 
-  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5b629cb0-bcf4-4c19-8488-5cc2a8ebc3ab)
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5b629cb0-bcf4-4c19-8488-5cc2a8ebc3ab)
+
+  6. Disini kita pilih Logical -> Beginning ( diatas ) End ( dibawah )
+
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/c555220b-7f7e-49c7-9145-560095e28308) Hasil
+
+  7. Karena 5GB untuk Mount Point /storage maka kita pilih angka 3 untuk mengganti mount point, Kemudian Pilih Enter Manual (10)
+
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/cbc907cb-15cf-4f0b-828e-373c45fce928)
+
+  8. Setelah itu kita simpan dengan memilih angka 11
+
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/6c3a9592-9b8b-4fb9-8a50-0af53a495ea1)
+
+
 
