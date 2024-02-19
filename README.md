@@ -133,6 +133,7 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
       
       ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/dab1eab5-205d-4669-83d2-0a3916bc45ca)
 
+  15. Pastikan Tersambung Ke INTERNET, kemudian ditunggu hingga selesai maka DEBIAN 12.5 AKAN TERINSTALL SEMPURNA.
 
 
 
