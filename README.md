@@ -7,7 +7,10 @@
 # TUGAS 1
 
 **DAFTAR ISI**
-[TOC]
+
+- [SOAL 1](#langkah-langkah-instalasi-sistem-operasi-debian)
+  - [Requirements](#persyaratan-sistem)
+
 
 
 ## Langkah-langkah Instalasi Sistem Operasi Debian
