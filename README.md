@@ -1,3 +1,9 @@
+# DAFTAR TUGAS AKAN SAYA TAMPILKAN PADA BAGIAN INI
+## [TUGAS 1]()
+
+---
+
+
 # Tugas 1: Langkah-langkah Instalasi Sistem Operasi Debian
 
 Instalasi sistem operasi Debian dapat dilakukan menggunakan berbagai aplikasi virtualisasi seperti VirtualBox, VMWare Player, atau Vmware Fusion (untuk MAC). Berikut adalah langkah-langkah instalasi Debian dengan menggunakan VirtualBox.
