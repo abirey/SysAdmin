@@ -162,3 +162,10 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 
   7. Jalankan Installer Menekan Continue.
   8. Tunggu Hingga Terinstall Sempurna.
+
+
+------------
+
+## 2. PERBEDAAN DEBIAN 12 ( BOOKWORM ) DENGAN DEBIAN 11 ( BULLSEYE )
+
+Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bullseye) : versi kernel, kebutuhan sistem, penerapan systemd dan perbedaan packagenya (dalam bentuk tabel) !
