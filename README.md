@@ -135,5 +135,30 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 
   15. Pastikan Tersambung Ke INTERNET, kemudian ditunggu hingga selesai maka DEBIAN 12.5 AKAN TERINSTALL SEMPURNA.
 
+  **B. PILIHAN GRAPHICAL INSTALL**
 
+  DEBIAN memudahkan kita dalam Menginstall OS mereka dengan menyediakan GRAPHICAL INSTALLER!
 
+  1. Pilih Bahasa sesuai preferensi
+     
+     ![Screenshot (1319)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/55b24f48-41c8-4ab4-89a2-a10194487730)
+
+  2. Masukkan Hostname Berupa SysAdmin-3122500024
+
+     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ed69ee94-87a8-4c47-89ac-d7036ff1a21a)
+    
+  3. Isilah Beberapa Credentials Yang diwajibkan untuk diisi, root password, akun pengguna dsb.
+
+     ![Screenshot (1322)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5717b8c0-4bb5-461b-8a44-21b0876d008f)
+
+  4. Setting Partisi seperti dibawah
+
+     ![Screenshot (1324)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/57702346-9075-4bce-87c0-6287a7b360a5)
+
+  5. Pada Bagian Ini Lakukan Klik Menggunakan Mouse Ke Partisi lalu Buat Partisi Baru Pastikan Mount Point telah sama
+  6. jika belum dapat diubah, dan pastikan use as benar
+
+     ![Screenshot (1325)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/151b6f65-10e1-4a97-976b-1dbb0b0f5468)
+
+  7. Jalankan Installer Menekan Continue.
+  8. Tunggu Hingga Terinstall Sempurna.
