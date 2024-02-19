@@ -1,5 +1,5 @@
 # DAFTAR TUGAS AKAN SAYA TAMPILKAN PADA BAGIAN INI
-### [TUGAS 1](#Tugas 1)
+### [TUGAS 1](#tugas-1)
 
 
 ---
