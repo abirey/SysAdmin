@@ -52,6 +52,7 @@ Instalasi sistem operasi Debian dapat dilakukan menggunakan berbagai aplikasi vi
 
 
 2. **Instalasi OS Debian**
+   
 Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jalankan dengan menekan tombol Start, setelah VM Menyala maka akan disuguhkan tampilan HOME dari Debian OS.
 
 ![HOME DEBIAN](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5933edad-5a74-458a-98f3-d38ad5ba25ca)
