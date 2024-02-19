@@ -71,8 +71,9 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 ![HOME DEBIAN](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5933edad-5a74-458a-98f3-d38ad5ba25ca)
 
   **A. PILIHAN INSTALL**
+  
       1. Kita disini akan disuguhkan opsi install dengan CLI, Untuk Bagian Bahasa Sesuaikan Preferensi Masing Masing,
       Kemudian Pastikan **HOST : SysAdmin-NRP ** disini saya SysAdmin-3122500024
       
-      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ef00a5a2-d0e4-4d56-8770-3d1653464144)
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ef00a5a2-d0e4-4d56-8770-3d1653464144)
 
