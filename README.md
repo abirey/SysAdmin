@@ -70,4 +70,4 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 
 ![HOME DEBIAN](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5933edad-5a74-458a-98f3-d38ad5ba25ca)
 
-
+  **PILIHAN GRAPHICAL INSTALL**
