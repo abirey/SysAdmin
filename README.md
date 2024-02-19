@@ -9,7 +9,7 @@
 
 **DAFTAR ISI**
 
-- [SOAL 1](#langkah-langkah-instalasi-sistem-operasi-debian)
+- [SOAL 1](#1-langkah-langkah-instalasi-sistem-operasi-debian)
   - [Requirements](#persyaratan-sistem)
   - [Persiapan](#persiapan)
   - [Mulai](#langkah-langkah)
