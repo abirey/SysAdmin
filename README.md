@@ -1,6 +1,6 @@
 # DAFTAR TUGAS AKAN SAYA TAMPILKAN PADA BAGIAN INI
-### [TUGAS 1](#tugas-1)
-  #### _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/main/TUGAS1.md)_
+- ### [TUGAS 1](#tugas-1)
+  - #### _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/main/TUGAS1.md)_
 
 
 ---
