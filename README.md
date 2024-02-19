@@ -77,7 +77,7 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
   1. Kita disini akan disuguhkan opsi install dengan CLI, Untuk Bagian Bahasa Sesuaikan Preferensi Masing Masing,
       Kemudian Pastikan **HOST : SysAdmin-NRP** disini saya SysAdmin-3122500024
       
-     ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ef00a5a2-d0e4-4d56-8770-3d1653464144)
+     ![Screenshot (1291)](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/984652d6-352b-450d-9027-4afacc1ace84)
 
   2. Sesuaikan password untuk user **root** anda lalu buatlah satu akun pengguna untuk anda disini saya beri nama *user*
 
