@@ -1,17 +1,25 @@
-# SysAdmin
-Repository untuk Matkul Workshop Administrasi Jaringan
-## Tugas 1
-1) Buatlah tulisan tentang langkah-langkah instalasi sistem operasi Debian. Anda bisa menggunakan aplikasi virtualisasi seperti VirtualBox, VMWare Player, Vmware Fusion (MAC), dls. Kebutuhan sistem adalah sebagai berikut :
-   - CPU : 2 core
-   - RAM : 4096 (min)
-   - HDD : 25 GB dengan partisi :
-     * / : 20 GB
-     * /storage : 5 GB
-     * swap : 1,5 GB
-   - Hostname : SysAdmin-NRP
-2) Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bullseye) : versi kernel, kebutuhan sistem, penerapan systemd dan perbedaan packagenya (dalam bentuk tabel) !
-3) Jelaskan fungsi dari file "/etc/groups" beserta formatnya!
-4) Jelaskan perbedaan penggunaan perintah "su" dengan "su -"!
-5) Jelaskan fungsi dari "sudo" !
-6) Jelaskan langkah-langkah penambahan user anda sebagai user sudo ! Gunakan perintah "su -" lalu setelah masuk sebagai root, jalankan perintah "visudo". Tambahkan user anda di bawah user root pada bagian " # User privilege specification"
-## 
+# Tugas 1: Langkah-langkah Instalasi Sistem Operasi Debian
+
+Instalasi sistem operasi Debian dapat dilakukan menggunakan berbagai aplikasi virtualisasi seperti VirtualBox, VMWare Player, atau Vmware Fusion (untuk MAC). Berikut adalah langkah-langkah instalasi Debian dengan menggunakan VirtualBox.
+
+### Persyaratan Sistem:
+- CPU: Minimal 2 core.
+- RAM: Minimal 4096 MB (4 GB).
+- HDD: Minimal 25 GB dengan partisi sebagai berikut:
+  - / (root): 20 GB
+  - /storage: 5 GB
+  - swap: 1,5 GB
+- Hostname: SysAdmin-NRP
+
+### Langkah-langkah:
+
+1. **Persiapan:**
+   - Unduh file ISO Debian dari Repo resmi [DISINI](https://kartolo.sby.datautama.net.id/debian-cd/12.5.0/amd64/iso-cd/).
+   - Unduh dan instal aplikasi VirtualBox dari web resmi [DISINI](https://www.virtualbox.org/wiki/Downloads).
+
+2. **Membuat Mesin Virtual:**
+   - Buka VirtualBox dan klik tombol "New" untuk membuat mesin virtual baru.
+   - Beri nama mesin virtual SysAdmin-3122500024.
+   - Atur tipe dan versi sistem operasi Debian sesuai dengan berkas ISO yang Anda unduh.
+   - Atur alokasi RAM minimal 4096 MB.
+   - Buat hard disk virtual baru dengan ukuran minimal 25 GB.
