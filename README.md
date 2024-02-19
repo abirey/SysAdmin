@@ -77,3 +77,8 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
       
   ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ef00a5a2-d0e4-4d56-8770-3d1653464144)
 
+  2. Sesuaikan password untuk user **root** anda lalu buatlah satu akun pengguna untuk anda disini saya beri nama *user*
+
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/172be2b1-6fc2-4a2e-b3f9-8e634c332e49)
+
+
