@@ -83,10 +83,14 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 
   ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/172be2b1-6fc2-4a2e-b3f9-8e634c332e49)
 
-  PARTISI PART
+  **PARTISI PART**
   
   3. Kemudian kita masuk ke bagian Pembagian Partisi Pilih **MANUAL METHOD** Kemudian Pilih Partisinya disini saya memilih **SCSI3 (0,0,0) (sda) - 37.6 GB ATA VBOX HARDDISK**
       
   
   ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/f22f4aaf-6f6e-4200-b31b-4563c603c1e8)
 
+
+  4. Kemudian muncul prompt Ya Tidak, Pada Bagian ini bisa dijawab Tidak Setelah itu Akan Muncul Partisi Kosong **(FREE SPACE)** Masukkan Angka kemudian tekan enter
+
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/dfe5ac12-adfe-42ad-9406-851b158515d9)
