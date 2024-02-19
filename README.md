@@ -1,5 +1,5 @@
 # DAFTAR TUGAS AKAN SAYA TAMPILKAN PADA BAGIAN INI
-### [TUGAS 1](#Tugas 1: Langkah-langkah Instalasi Sistem Operasi Debian)
+### ![TUGAS 1](#Tugas 1: Langkah-langkah Instalasi Sistem Operasi Debian)
 
 
 ---
@@ -38,19 +38,22 @@ Instalasi sistem operasi Debian dapat dilakukan menggunakan berbagai aplikasi vi
 1. **Membuat Virtual Machine**
    - Buka VirtualBox dan klik tombol "New" untuk membuat mesin virtual baru.
    - Beri nama mesin virtual SysAdmin-3122500024.
-   ![Screenshot 2024-02-19 201444](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/411502a5-8282-4e85-ac03-59b31a322b0e)
+   ![CREATE](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/411502a5-8282-4e85-ac03-59b31a322b0e)
 
    - **Pastikan Centang Kotak ** Supaya dapat melakukan Custom Install.
      
    - Atur alokasi RAM minimal 4096 MB. Disini saya alokasi 8GB
    - Atur alokasi core CPU minimal 2 Core, disini saya alokasi 6 Core dari 12 Core
-   ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/f8dcbcba-39e2-45af-9896-c70f6b26c257)
+   ![SPEK](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/f8dcbcba-39e2-45af-9896-c70f6b26c257)
     
    - Buat hard disk virtual baru dengan ukuran minimal 25 GB.
-   ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5d2bd9a7-7e5b-41d2-bae9-7a65e0c05abc)
+   ![DISK SIZE](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5d2bd9a7-7e5b-41d2-bae9-7a65e0c05abc)
 
 
 
 2. **Instalasi OS Debian**
-Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jalankan dengan menekan tombol Start, setelah VM Menyala maka akan disuguhkan tampilan HOME dari Debian OS
+Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jalankan dengan menekan tombol Start, setelah VM Menyala maka akan disuguhkan tampilan HOME dari Debian OS.
+
+![HOME DEBIAN](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5933edad-5a74-458a-98f3-d38ad5ba25ca)
+
 
