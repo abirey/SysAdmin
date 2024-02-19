@@ -73,7 +73,7 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
   **A. PILIHAN INSTALL**
   
   1. Kita disini akan disuguhkan opsi install dengan CLI, Untuk Bagian Bahasa Sesuaikan Preferensi Masing Masing,
-      Kemudian Pastikan **HOST : SysAdmin-NRP ** disini saya SysAdmin-3122500024
+      Kemudian Pastikan **HOST : SysAdmin-NRP** disini saya SysAdmin-3122500024
       
   ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ef00a5a2-d0e4-4d56-8770-3d1653464144)
 
