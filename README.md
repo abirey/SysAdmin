@@ -71,6 +71,7 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 ![HOME DEBIAN](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5933edad-5a74-458a-98f3-d38ad5ba25ca)
 
   **A. PILIHAN INSTALL**
+  
   Note: Masukkan Angka Lalu tekan **ENTER** atau Gunakan _Panah Navigasi_ untuk memilih Menu
   
   1. Kita disini akan disuguhkan opsi install dengan CLI, Untuk Bagian Bahasa Sesuaikan Preferensi Masing Masing,
@@ -83,6 +84,7 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
   ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/172be2b1-6fc2-4a2e-b3f9-8e634c332e49)
 
   PARTISI PART
+  
   3. Kemudian kita masuk ke bagian Pembagian Partisi Pilih **MANUAL METHOD** Kemudian Pilih Partisinya disini saya memilih **SCSI3 (0,0,0) (sda) - 37.6 GB ATA VBOX HARDDISK**
       
   
