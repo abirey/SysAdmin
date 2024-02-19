@@ -117,7 +117,22 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
      
      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/4f86ad7a-4e4e-420a-b207-5b39a8f76e57)
 
-     
+  10. Untuk Opsi / (root) pastikan mount point adalah "/" Lakukan Simpan
+  11. Setelah Tersimpan Kita Lakukan WRITE DISK PARTITION, Pastikan YES
+      
+      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/583d8f0a-9a77-4e36-8dc0-d47d76ed59c8)
+
+  12. Secara Otomatis Sistem akan Menginstall BASE SYSTEM tunggu beberapa saat
+      
+      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/af1f62fc-64c7-4b97-9ced-0c32d3a7a422)
+
+  13. Setelah Terinstall User diminta memasukan **REPOSITORY UNTUK MENDOWNLOAD SOFTWARE**
+      Saya Menyarankan menggunakan Mirror https://kartolo.sby.datautama.net.id/ Karena Mirror berada di Indonesia dan up to date.
+
+  14. Jika Muncul Bagian ini silahkan di Enter Saja (DEFAULT OPTION)
+      
+      ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/dab1eab5-205d-4669-83d2-0a3916bc45ca)
+
 
 
 
