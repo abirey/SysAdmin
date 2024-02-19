@@ -94,3 +94,8 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
   4. Kemudian muncul prompt Ya Tidak, Pada Bagian ini bisa dijawab Tidak Setelah itu Akan Muncul Partisi Kosong **(FREE SPACE)** Masukkan Angka kemudian tekan enter
 
   ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/dfe5ac12-adfe-42ad-9406-851b158515d9)
+
+  5. Setelah Memilih Create New Partition, Masukkan Maximum Size dari disk yang akan dibagi
+
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/5b629cb0-bcf4-4c19-8488-5cc2a8ebc3ab)
+
