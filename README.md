@@ -247,3 +247,28 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
   
 
 ## 6.	Jelaskan langkah-langkah penambahan user anda sebagai user sudo ! Gunakan perintah "su -" lalu setelah masuk sebagai root, jalankan perintah "visudo". Tambahkan user anda di bawah user root pada bagian " # User privilege specification"
+
+  Sebelumnya kita akan mencoba melakukan sudo dengan username "user" (belum ditambahkan ke sudoers file).
+
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/ac7da5bb-8367-4196-bd0c-508fa349393b)
+  
+  disini gagal.
+
+  ### SETUP VISUDO ( SUDOERS FILE )
+
+  lakukan su - untuk masuk ke dalam root sehingga kita memiliki privilage superuser
+
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/cd8926b1-124a-46e7-b1b9-8929eeb817fc)
+  
+  setelah itu ketikan visudo, dan kita lakukan edit pada bagian User Privilage
+  
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/3079725c-0d59-49dd-bb14-aee4bca41a82)
+
+  setelah mendapat privilage username user dapat menggunakan sudo command
+  
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/23168c6f-fb3a-4eec-9cf7-5272af3bcb99)
+
+  
+  
+  
+  
