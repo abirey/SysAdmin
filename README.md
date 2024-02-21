@@ -178,3 +178,4 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 | Penerapan Systemd | Versi 252 | Versi 247 | [LINK](https://www.debian.org/releases/stable/i386/release-notes/ch-whats-new.html) |
 | | | | |
 | Package | 64419 packages | | [LINK]() |
+| | non-free firmware packages dipindahkan dari non-free ke non-free-firmware | Manual diubah "4.1.8 bullseye: recommended to add non-free-firmware" dan 5.1.1. | [BOOKWORM 2.2](https://www.debian.org/releases/stable/i386/release-notes/ch-whats-new.en.html#newdistro) [BULLSEYE 4.1.8](https://www.debian.org/releases/stable/i386/release-notes/ch-upgrading.en.html#non-free-firmware) [BULLSEYE 5.1.1](https://www.debian.org/releases/stable/i386/release-notes/ch-information.en.html#non-free-split) |
