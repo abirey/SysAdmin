@@ -174,6 +174,4 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 |Jenis |Debian 12 (bookworm)|Debian 12 (bookworm)| Sumber |
 |-----|--------|---------------------------------| [LINK]()
 |Versi Kernel| Linux Kernel 6.1 LTS| Linux Kernel 5.10 LTS |
-|Kebutuhan Sistem  |   No desktop	256 megabytes	512 megabytes	4 gigabytes
-With Desktop	1 gigabytes	2 gigabytes	10 gigabytes   |   No desktop	256 megabytes	512 megabytes	4 gigabytes
-With Desktop	1 gigabytes	2 gigabytes	10 gigabytes    | [BOOKWORM](https://www.debian.org/releases/bookworm/amd64/ch03s04.en.html) [BULLSEYE](https://www.debian.org/releases/bullseye/amd64/ch03s04.en.html)  |
+|Kebutuhan Sistem  |   No desktop	RAM 256Mb - 512Mb	DISK 4 GB With Desktop	RAM 1 GB- 2 GB DISK 10 GB   |   No desktop	RAM 256Mb - 512Mb	DISK 4 GB With Desktop	RAM 1 GB- 2 GB DISK 10 GB    | [BOOKWORM](https://www.debian.org/releases/bookworm/amd64/ch03s04.en.html) [BULLSEYE](https://www.debian.org/releases/bullseye/amd64/ch03s04.en.html)  |
