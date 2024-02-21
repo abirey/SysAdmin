@@ -12,7 +12,7 @@
 | [AWAL RAYA](https://github.com/abirey)| 3122500012 |
 | [ALI AZHAR P.B](https://github.com/AliAzhar14)| 3122500011|
 
----
+-------
 
 # TUGAS 1
 
@@ -30,7 +30,7 @@
   - [COMMAND SU](#a-su)
   - [COMMAND SU-](#b-su--)
 - [SOAL 5](#5-fungsi-sudo-command)
-- [soal 6](#6jelaskan-langkah-langkah-penambahan-user-anda-sebagai-user-sudo--gunakan-perintah-su---lalu-setelah-masuk-sebagai-root-jalankan-perintah-visudo-tambahkan-user-anda-di-bawah-user-root-pada-bagian---user-privilege-specification)
+- [SOAL 6](#6jelaskan-langkah-langkah-penambahan-user-anda-sebagai-user-sudo--gunakan-perintah-su---lalu-setelah-masuk-sebagai-root-jalankan-perintah-visudo-tambahkan-user-anda-di-bawah-user-root-pada-bagian---user-privilege-specification)
 
 
 ## 1. Langkah-langkah Instalasi Sistem Operasi Debian
