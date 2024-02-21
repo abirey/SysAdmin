@@ -190,31 +190,31 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 
   Untuk satu group di tulis dalam satu baris dengan format sebagai berikut
 
-    group_name:password:GID:user_list
+        group_name:password:GID:user_list
       
 
 
   Dengan rincian sebagai berikut:
 
-    group_name  
+        group_name  
 
 
 
   nama dari grup.
 
-    password
+        password
 
 
 
   password dari group yang terenkripsi.  Jika kosong maka groups tidak berpassword.
 
-    GID  
+        GID  
 
 
        
   GROUP ID bersifat numerik.
 
-    user_list
+        user_list
 
 
 
