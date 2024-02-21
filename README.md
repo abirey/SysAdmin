@@ -174,9 +174,7 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 |Jenis |Debian 12 (bookworm)|Debian 12 (bookworm)| Sumber |
 |-----|--------|---------------------------------| ------ |
 |Versi Kernel| Linux Kernel 6.1 LTS| Linux Kernel 5.10 LTS | [LIST](https://docs-cortex.paloaltonetworks.com/r/Linux-Kernel-Versions/Debian-11-x86_64) |
-| | + Kernel Concurrency Sanitizer 
-
-+ Kernel Control Flow Integrity (KCFI) support (KCSAN) |         |
+| | + Kernel Concurrency Sanitizer + Kernel Control Flow Integrity (KCFI) support (KCSAN) |         | |
 |Kebutuhan Sistem  |   No desktop	RAM 256Mb - 512Mb	DISK 4 GB With Desktop	RAM 1 GB- 2 GB DISK 10 GB   |   No desktop	RAM 256Mb - 512Mb	DISK 4 GB With Desktop	RAM 1 GB- 2 GB DISK 10 GB    | [BOOKWORM](https://www.debian.org/releases/bookworm/amd64/ch03s04.en.html) [BULLSEYE](https://www.debian.org/releases/bullseye/amd64/ch03s04.en.html)  |
 | Penerapan Systemd | Versi 252 | Versi 247 | [LINK](https://www.debian.org/releases/stable/amd64/release-notes/ch-whats-new.html) |
 | |Resolvectl menampilkan informasi lokasi host resolved jika komunikasi terenkripsi | - | [ARTIKEL](https://www.debian.org/releases/stable/arm64/release-notes/ch-information.en.html#systemd-resolved) |
