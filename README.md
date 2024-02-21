@@ -170,7 +170,7 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 
 Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bullseye) : versi kernel, kebutuhan sistem, penerapan systemd dan perbedaan packagenya (dalam bentuk tabel) !
 
-|Name |Quantity|
-|-----|--------|
-|Apple|3       |
-|Egg  |12      |
+|Jenis |Debian 12 (bookworm)|Debian 12 (bookworm)|
+|-----|--------|---------------------------------|
+|Versi Kernel| Linux Kernel 6.1 LTS| Linux Kernel 5.10 LTS |
+|Kebutuhan Sistem  |12      | |
