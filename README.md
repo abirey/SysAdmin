@@ -182,3 +182,27 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 | Package | 64419 packages (11089 new) | 53330 packages | [LINK](https://www.debian.org/releases/stable/amd64/release-notes/ch-whats-new.en.html#newdistro) |
 | | non-free firmware packages dipindahkan dari non-free ke non-free-firmware | Manual diubah "4.1.8 bullseye: recommended to add non-free-firmware" dan 5.1.1. | [BOOKWORM 2.2](https://www.debian.org/releases/stable/i386/release-notes/ch-whats-new.en.html#newdistro) [BULLSEYE 4.1.8](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.en.html#non-free-firmware) [BULLSEYE 5.1.1](https://www.debian.org/releases/stable/amd64/release-notes/ch-information.en.html#non-free-split) |
 | Filesystems | NTFS sudah ada (bulit in) -> ikut kernel 5.15, + ntfs2btrfs | harus menggunakan third party | |
+
+
+## 3. FUNGSI FILE "etc/groups" DAN FORMATNYA
+
+Bersumber dari manual books linux ( dapat menggunakan command "man"). "etc/groups" sebuah file teks yang berisi definisi dari groups yang ada pada system. 
+
+Untuk satu group di tulis dalam satu baris dengan format sebagai berikut
+
+`group_name:password:GID:user_list`
+
+Dengan rincian sebagai berikut:
+
+`group_name`
+nama dari grup.
+
+       password
+              the (encrypted) group password.  If this field is empty,
+              no password is needed.
+
+       GID    the numeric group ID.
+
+       user_list
+              a list of the usernames that are members of this group,
+              separated by commas.
