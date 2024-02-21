@@ -186,36 +186,46 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 
 ## 3. FUNGSI FILE "etc/groups" DAN FORMATNYA
 
-Bersumber dari manual books linux ( dapat menggunakan command "man"). "etc/groups" sebuah file teks yang berisi definisi dari groups yang ada pada system. 
+  Bersumber dari manual books linux ( dapat menggunakan command "man"). "etc/groups" sebuah file teks yang berisi definisi dari groups yang ada pada system. 
 
-Untuk satu group di tulis dalam satu baris dengan format sebagai berikut
+  Untuk satu group di tulis dalam satu baris dengan format sebagai berikut
 
     group_name:password:GID:user_list
       
 
 
-Dengan rincian sebagai berikut:
+  Dengan rincian sebagai berikut:
 
     group_name  
 
 
 
-nama dari grup.
+  nama dari grup.
 
     password
 
 
 
-password dari group yang terenkripsi.  Jika kosong maka groups tidak berpassword.
+  password dari group yang terenkripsi.  Jika kosong maka groups tidak berpassword.
 
     GID  
 
 
        
-GROUP ID bersifat numerik.
+  GROUP ID bersifat numerik.
 
     user_list
 
 
 
-list dari username user yang berada pada grup, dipisahkan dengan koma.
+  list dari username user yang berada pada grup, dipisahkan dengan koma.
+
+## 4. PERBEDAAN SU dan SU-
+
+  Sebelumnya berikut adalah format pattern dari command su di linux :
+  
+    su [options] [-] [user [argument...]]
+
+   a. "su"
+
+      
