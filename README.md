@@ -1,7 +1,7 @@
 # DAFTAR TUGAS AKAN SAYA TAMPILKAN PADA BAGIAN INI
 | TUGAS | FILE |
 | ------| -----|
-| [TUGAS 1](#tugas-1) |  _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/main/TUGAS1.md)_ |
+| [TUGAS 1](#tugas-1) |  _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md)_ |
 | TUGAS 2 | - |
 
 # KELOMPOK 2
