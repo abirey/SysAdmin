@@ -176,6 +176,6 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 |Versi Kernel| Linux Kernel 6.1 LTS| Linux Kernel 5.10 LTS |
 |Kebutuhan Sistem  |   No desktop	RAM 256Mb - 512Mb	DISK 4 GB With Desktop	RAM 1 GB- 2 GB DISK 10 GB   |   No desktop	RAM 256Mb - 512Mb	DISK 4 GB With Desktop	RAM 1 GB- 2 GB DISK 10 GB    | [BOOKWORM](https://www.debian.org/releases/bookworm/amd64/ch03s04.en.html) [BULLSEYE](https://www.debian.org/releases/bullseye/amd64/ch03s04.en.html)  |
 | Penerapan Systemd | Versi 252 | Versi 247 | [LINK](https://www.debian.org/releases/stable/amd64/release-notes/ch-whats-new.html) |
-| | | | |
+| |Resolvectl menampilkan informasi lokasi host resolved jika komunikasi terenkripsi | - | [ARTIKEL](https://www.debian.org/releases/stable/arm64/release-notes/ch-information.en.html#systemd-resolved) |
 | Package | 64419 packages (11089 new) | 53330 packages | [LINK](https://www.debian.org/releases/stable/amd64/release-notes/ch-whats-new.en.html#newdistro) |
 | | non-free firmware packages dipindahkan dari non-free ke non-free-firmware | Manual diubah "4.1.8 bullseye: recommended to add non-free-firmware" dan 5.1.1. | [BOOKWORM 2.2](https://www.debian.org/releases/stable/i386/release-notes/ch-whats-new.en.html#newdistro) [BULLSEYE 4.1.8](https://www.debian.org/releases/stable/amd64/release-notes/ch-upgrading.en.html#non-free-firmware) [BULLSEYE 5.1.1](https://www.debian.org/releases/stable/amd64/release-notes/ch-information.en.html#non-free-split) |
