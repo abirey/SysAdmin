@@ -2,6 +2,7 @@
 | TUGAS | FILE |
 | ------| -----|
 | [TUGAS 1](#tugas-1) |  _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/main/TUGAS1.md)_ |
+| TUGAS 2 | - |
 
 
 ---
@@ -15,6 +16,14 @@
   - [Persiapan](#persiapan)
   - [Mulai](#langkah-langkah)
 
+- [SOAL 2](#2-perbedaan-debian-12--bookworm--dengan-debian-11--bullseye-)
+
+- [SOAL 3](#3-fungsi-file-etcgroups-dan-formatnya)
+- [SOAL 4](4-perbedaan-su-dan-su-)
+  - [COMMAND SU](#a-su)
+  - [COMMAND SU-](#b-su--)
+- [SOAL 5](#5-fungsi-sudo-command)
+- [soal 6](#6jelaskan-langkah-langkah-penambahan-user-anda-sebagai-user-sudo--gunakan-perintah-su---lalu-setelah-masuk-sebagai-root-jalankan-perintah-visudo-tambahkan-user-anda-di-bawah-user-root-pada-bagian---user-privilege-specification)
 
 
 ## 1. Langkah-langkah Instalasi Sistem Operasi Debian
