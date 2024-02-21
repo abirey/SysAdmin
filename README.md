@@ -171,7 +171,9 @@ Setelah kita melakukan setup pada bagian VM, selanjutnya Machine dapat kita jala
 
 Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bullseye) : versi kernel, kebutuhan sistem, penerapan systemd dan perbedaan packagenya (dalam bentuk tabel) !
 
-|Jenis |Debian 12 (bookworm)|Debian 12 (bookworm)|
-|-----|--------|---------------------------------|
+|Jenis |Debian 12 (bookworm)|Debian 12 (bookworm)| Sumber |
+|-----|--------|---------------------------------| [LINK]()
 |Versi Kernel| Linux Kernel 6.1 LTS| Linux Kernel 5.10 LTS |
-|Kebutuhan Sistem  |12      | |
+|Kebutuhan Sistem  |   No desktop	256 megabytes	512 megabytes	4 gigabytes
+With Desktop	1 gigabytes	2 gigabytes	10 gigabytes   |   No desktop	256 megabytes	512 megabytes	4 gigabytes
+With Desktop	1 gigabytes	2 gigabytes	10 gigabytes    | [BOOKWORM](https://www.debian.org/releases/bookworm/amd64/ch03s04.en.html) [BULLSEYE](https://www.debian.org/releases/bullseye/amd64/ch03s04.en.html)  |
