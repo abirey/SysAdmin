@@ -244,15 +244,25 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 
 ### a. "su"
 
-  Perintah su tanpa options atau param nama digunakan untuk melakukan superuser user sekarang (root shell saat ini).
+  Perintah su tanpa options atau param nama digunakan untuk melakukan superuser user sekarang (root shell saat ini). dengan directory user sekarang.
     
   contoh :
+
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/3f6eab2c-d1bd-445f-a3a3-3ff6418962f4)
+
 
 
 ### b. "su -"
 
   (-) strip, adalah opsi yang dapat digunakan pada command su, digunakan untuk berpindah dengan root di environtement baru dengan menginisialisasi lingkungan shell baru.
-    jadi seperti halaman login awal.
+    jadi seperti halaman login awal. dengan directory root.
+
+  contoh: 
+
+  ![image](https://github.com/Reza1290/SysAdmin-3122500024/assets/70069286/23328bb4-232b-444e-b5a1-259312906cbe)
+
+
+  
 
 
 ## 5. FUNGSI "SUDO" COMMAND
