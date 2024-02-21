@@ -245,4 +245,5 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 
   Penggunaannya saat kita menggunakan akun kita misal user lalu terdapat command yang mengharuskan permission diatas kita, kita dapat melakukan sudo tanpa perlu masuk ke root dengan masuk sebagai superuser atau user lain.
   
-      
+
+## 6.	Jelaskan langkah-langkah penambahan user anda sebagai user sudo ! Gunakan perintah "su -" lalu setelah masuk sebagai root, jalankan perintah "visudo". Tambahkan user anda di bawah user root pada bagian " # User privilege specification"
