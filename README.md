@@ -190,19 +190,23 @@ Bersumber dari manual books linux ( dapat menggunakan command "man"). "etc/group
 
 Untuk satu group di tulis dalam satu baris dengan format sebagai berikut
 
-`group_name:password:GID:user_list`
+       group_name:password:GID:user_list
+      
 
 Dengan rincian sebagai berikut:
 
-`group_name`
+       group_name  
+      
 nama dari grup.
 
        password
-              the (encrypted) group password.  If this field is empty,
-              no password is needed.
+       
+password dari group yang terenkripsi.  Jika kosong maka groups tidak berpassword.
 
-       GID    the numeric group ID.
+       GID    
+       
+GROUP ID bersifat numerik.
 
        user_list
-              a list of the usernames that are members of this group,
-              separated by commas.
+
+list dari username user yang berada pada grup, dipisahkan dengan koma.
