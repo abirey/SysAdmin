@@ -226,6 +226,6 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
   
     su [options] [-] [user [argument...]]
 
-   a. "su"
+    a. "su"
 
       
