@@ -237,4 +237,12 @@ Buat ringkasan tentang perbedaan dari Debian 12 (bookworm) dengan Debian 11 (bul
 
   (-) strip, adalah opsi yang dapat digunakan pada command su, digunakan untuk berpindah dengan root di environtement baru dengan menginisialisasi lingkungan shell baru.
     jadi seperti halaman login awal.
+
+
+## 5. FUNGSI "SUDO" COMMAND
+
+  Secara singkat, Sudo merupakan singkatan dari superuser do. Dengan menggunakan ini, pengguna non-root dapat menjalankan perintah yang hanya bisa dilakukan oleh hak istimewa superuser. Ini memungkinkan pengguna dapat melakukan tugas administratif tanpa membuka resiko keamanan yang terkait dengan penggunaan root. Memudahkan membedakan environtment sendiri dan environtment administrator tanpa harus menggunakan kredensial sendiri maupun root.
+
+  Penggunaannya saat kita menggunakan akun kita misal user lalu terdapat command yang mengharuskan permission diatas kita, kita dapat melakukan sudo tanpa perlu masuk ke root dengan masuk sebagai superuser atau user lain.
+  
       
