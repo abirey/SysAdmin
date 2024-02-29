@@ -119,9 +119,9 @@ Direktori-direktori yang berbeda antara lain.
 
 Berikut adalah gambar visual dalam bentuk tree dari directory root
 
-![alt text](<assets/WhatsApp Image 2024-02-26 at 14.17.51_912ab718.jpg>)
+![alt text](<TUGAS_2/assets/WhatsApp Image 2024-02-26 at 14.17.51_912ab718.jpg>)
 
-![alt text](assets/linuk.png)
+![alt text](TUGAS_2/assets/linuk.png)
 
 
 # 2. [MARP CLICK](./PPT_SYSADMIN.md)
@@ -131,30 +131,30 @@ Ada 2 cara kita dapat melakukan setting network di debian yaitu dengan GUI ( NET
 
 
 Default Gateway :
-![alt text](assets/image-jaringan5.png)
+![alt text](TUGAS_2/assets/image-jaringan5.png)
 
 #### A. NETWORK MANAGER
 - Buka Network Manager
 - Buka setting pada interface terhubung/ sambungkan terlebih dahulu
-![alt text](assets/image-jaringan.png)
+![alt text](TUGAS_2/assets/image-jaringan.png)
 
 - Pilih Menu IPV4 lalu klik manual, isi sesuai kolom
-![alt text](assets/image-jaringan4.png)
+![alt text](TUGAS_2/assets/image-jaringan4.png)
 
 - hasil
-![alt text](assets/image-jaringan8.png)
+![alt text](TUGAS_2/assets/image-jaringan8.png)
 #### B. Melalui interfaces File
 
 - Jalankan Perintah
-![alt text](assets/image-jaringan7.png)
+![alt text](TUGAS_2/assets/image-jaringan7.png)
 
 - Setting seperti format berikut
-![alt text](assets/image-jaringan6.png)
+![alt text](TUGAS_2/assets/image-jaringan6.png)
 
 - lakukan ifdown ifup nama interface
-![alt text](assets/image-jaringan9.png)
+![alt text](TUGAS_2/assets/image-jaringan9.png)
 
 - hasil
-![alt text](assets/image-jaringan10.png)
+![alt text](TUGAS_2/assets/image-jaringan10.png)
 
 [sumber](https://wiki.debian.org/NetworkConfiguration#Starting_and_Stopping_Interfaces)
