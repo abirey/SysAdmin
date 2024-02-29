@@ -34,7 +34,7 @@ nano /etc/apt/sources.list
 ```
 
 ---
-![alt text](image.png)
+![alt text](assets/image.png)
 Beberapa istilah yang ada di dalam file ``sources.list``
 
 | Istilah  | Deskripsi |
@@ -187,54 +187,116 @@ menghapus paket usang
 
 langkah Install: **Buka, Cari, Klik Tombol Install**
 
+![height:500px](assets/install_deb.png)
+
 ---
 langkah Delete: **Klik Bagian Installed, Klik Uninstall, Confirm, Done**
+
+![height:500px](assets/remov_softwaredeb.jpg)
 
 ---
 langkah upgrade: **Bagian Update, Klik Download, Klik Restart and Update**
 
+![height:500px](assets/upgrd_softwaredeb.jpg)
+
 ---
 langkah modifikasi source repo: **Klik Hamburger menu di kanan atas, Klik Software Repositories, Konfigurasi, Klik Reload.**
+
+![height:500px](assets/mod_softdeb.jpg)
 
 ---
 ##### Versi Mudah install Paket dengan Aplikasi _KDE_
 
+langkah Install: **buka aplikasi, klik tombol Install**
+
+![height:500px](assets/instalpaket-discovdeb.jpg)
+
+---
+
+langkah Delete: **Klik bagian installed, klik tombol Remove**
+
+![width:1000px](assets/unin_discovdeb.jpg)
+
+
+---
+langkah Update: **Klik bagian Update, klik tombol Update All, Isi Password**    
+
+![height:500px width:1200px](assets/upd_discovdeb.jpg)
+
+---
+langkah Mengganti Repo: **klik bagian settings centang Repo Yang Dipilih**    
+
+![height:500px](assets/mng_discovdeb.jpg)
 
 ---
 ##### Versi Mudah install Paket dengan Aplikasi _Synaptic_
 
+pastikan reload sebelum menggunakan aplikasi.
+
+![alt text](assets/image-9.png)
+
+---
+langkah Update: **Klik mark all Upgrades, kemudian tekan Mark, setelah itu tekan Apply**  
+
+![height:500px width:1000px](assets/upd_syndeb.jpg)
+
+---
+langkah Update: **Cari App, Kemudian klik kanan, Mark for Install, Apply**    
+![height:500px](assets/ins_syndeb.jpg)
+
+---
+langkah Delete: **pilih bagian installed, Kemudian klik kanan, Mark for Complete Removal, Apply**    
+
+![height:500px](assets/unin_syndeb.jpg)
+
+---
+langkah Delete File Tidak Terpakai: **pilih bagian installed auto removable, Kemudian klik kanan, Mark for Complete Removal, Apply**    
+
+![height:500px](assets/clnuseless_syndeb.jpg)
+
+---
+langkah Delete File Config Sisa: **pilih bagian installed residual config, Kemudian klik kanan, Mark for Complete Removal, Apply**    
+
+![height:500px](assets/clnresidu_syndeb.jpg)
+
+---
+
+Synaptic Preferences
+
+![height:500px width:1100px](assets/mng_syndeb.jpg)
+
 ---
 
 # Membersihkan System
-cara membersihkan ruang disk yang penuh
-terdapat beberapa **Tool** yang dapat digunakan
-sebelum itu mari kita gunakan terminal
+cara membersihkan ruang disk yang penuh terdapat beberapa **Tool** yang dapat digunakan sebelum itu mari kita gunakan terminal
 
 ```
 df -h
 ```
-![alt text](image-1.png)
+
+![alt text](assets/image-1.png)
 
 ---
 
 melihat direktori secara banyak dan terurut
 
-![alt text](image-2.png)
+![width: 800px](assets/image-2.png)
+
+---
 
 Menggunakan **Tool ncdu**
-
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
 hasil ``ncdu``
 
-![alt text](image-4.png)
+![height: 400px](assets/image-4.png)
 
 
 ---
 
 Tool **Baobab** secara default telah diinstall bersama Gnome
 
-![alt text](image-5.png)
+![alt text](assets/image-5.png)
 
 ---
 
@@ -341,6 +403,9 @@ dengan mode grafik kita dapat menginstall external .deb.
 
 langkah install: **Klik Kanan Open dengan GDBei atau open dari aplikasi, kemudian klik Install Package, jika ingin menghapus tekan Remove Package**
 
+---
+
+![height:600px](assets/gdebi.jpg)
 
 ---
 
@@ -387,7 +452,7 @@ flatpak remote-add flathub https://flathub.org/repo/flathub flatpakrepo
 apt install gnome-software-ptugin-flatpak
 ```
 
-![alt text](image-7.png)
+![alt text](assets/image-7.png)
 
 ---
 
@@ -395,7 +460,7 @@ apt install gnome-software-ptugin-flatpak
 
 untuk mengatur flatpak seperti aplikasi lainnya, kita harus menginstall plugin yang sesuai. saat mencari, kita harus mengklik file software, jangan langsung mengklik install. Harus melalui repositori flathub dari menu **discover source**.
 
-![alt text](image-8.png)
+![alt text](assets/image-8.png)
 
 ---
 

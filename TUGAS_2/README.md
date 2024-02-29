@@ -1,22 +1,14 @@
 # FILE LAINNYA
 
-| TUGAS | FILE |
-| ------| -----|
-| [TUGAS 1](#tugas-1) |  _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md)_ |
-| [TUGAS 2](#tugas-2) |  _[FILE 1](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_2/TUGAS2.md)_, _[PowerPoint Marp](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_2/PPT.md)_  |
-
+[BACK](../README.md)
 
 # TUGAS 2
 
 **DAFTAR ISI**
 
 - [SOAL 1](#1-linux-directory-structure)
-  - [Requirements](#persyaratan-sistem)
-  - [Persiapan](#persiapan)
-  - [Mulai](#langkah-langkah)
-
-- [SOAL 2](#2-perbedaan-debian-12--bookworm--dengan-debian-11--bullseye-)
-
+- [SOAL 2](./PPT_SYSADMIN.md)
+- [SOAL 3](#3-setting-network)
 
 
 ## 1. Linux Directory Structure
@@ -115,6 +107,42 @@ Direktori-direktori yang berbeda antara lain.
 
 Berikut adalah gambar visual dalam bentuk tree dari directory root
 
-![alt text](<WhatsApp Image 2024-02-26 at 14.17.51_912ab718.jpg>)
+![alt text](<assets/WhatsApp Image 2024-02-26 at 14.17.51_912ab718.jpg>)
 
-![alt text](linuk.png)
+![alt text](assets/linuk.png)
+
+
+# 2. [MARP CLICK](./PPT_SYSADMIN.md)
+# 3. Setting Network
+
+Ada 2 cara kita dapat melakukan setting network di debian yaitu dengan GUI ( NETWORK MANAGER ) dan CLI ( Menggunakan file /etc/network/interfaces)
+
+
+Default Gateway :
+![alt text](assets/image-jaringan5.png)
+
+#### A. NETWORK MANAGER
+- Buka Network Manager
+- Buka setting pada interface terhubung/ sambungkan terlebih dahulu
+![alt text](assets/image-jaringan.png)
+
+- Pilih Menu IPV4 lalu klik manual, isi sesuai kolom
+![alt text](assets/image-jaringan4.png)
+
+- hasil
+![alt text](assets/image-jaringan8.png)
+#### B. Melalui interfaces File
+
+- Jalankan Perintah
+![alt text](assets/image-jaringan7.png)
+
+- Setting seperti format berikut
+![alt text](assets/image-jaringan6.png)
+
+- lakukan ifdown ifup nama interface
+![alt text](assets/image-jaringan9.png)
+
+- hasil
+![alt text](assets/image-jaringan10.png)
+
+[sumber](https://wiki.debian.org/NetworkConfiguration#Starting_and_Stopping_Interfaces)
