@@ -2,7 +2,7 @@
 | TUGAS | FILE |
 | ------| -----|
 | [TUGAS 1](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md) |  _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md)_ |
-| [TUGAS 2](#tugas-2) | _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_2/README.md)_ |
+| [TUGAS 2](#tugas-2) | _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_2/README.md)_ _[MARP CLICK](.TUGAS_2/PPT_SYSADMIN.md)_ |
 
 # KELOMPOK 2
 
@@ -124,7 +124,7 @@ Berikut adalah gambar visual dalam bentuk tree dari directory root
 ![alt text](TUGAS_2/assets/linuk.png)
 
 
-# 2. [MARP CLICK](./PPT_SYSADMIN.md)
+# 2. [MARP CLICK](.TUGAS_2/PPT_SYSADMIN.md)
 # 3. Setting Network
 
 Ada 2 cara kita dapat melakukan setting network di debian yaitu dengan GUI ( NETWORK MANAGER ) dan CLI ( Menggunakan file /etc/network/interfaces)
