@@ -172,7 +172,7 @@ __Pastikan__ menggunakan ``sudo`` untuk menjalankan perintah berikut (root)
 |``apt autoremove``| auto menghapus paket tidak dibutuhkan|
 |``apt purge foo``| Menghapus paket foo dengan confignya|
 |``apt clean``| Menghapus cache lokal paket yang terinstall|
-|``apt autoclean``| Menghapus cache lokal paket yang lama(tertinggal)|
+|``apt autoclean``| Menghapus cache lokal paket yang lama(usang)|
 |``apt-mark showmanual``| tandai paket sebagai "manual install"|
 
 contoh all in one command
@@ -213,3 +213,240 @@ sebelum itu mari kita gunakan terminal
 ```
 df -h
 ```
+![alt text](image-1.png)
+
+---
+
+melihat direktori secara banyak dan terurut
+
+![alt text](image-2.png)
+
+Menggunakan **Tool ncdu**
+
+![alt text](image-3.png)
+
+hasil ``ncdu``
+
+![alt text](image-4.png)
+
+
+---
+
+Tool **Baobab** secara default telah diinstall bersama Gnome
+
+![alt text](image-5.png)
+
+---
+
+## Membersihkan Paket
+
+```apt/aptitude/dpkg``` package manager asli debian. seluruh source/deb dari paket akan di store di ``/var/cache/apt/archives/`` folder.
+
+untuk membersihkan Cache apt kita dapat menggunakan perintah 
+```
+apt clean
+```
+
+setelah di bersihkan cachenya, kita bisa hapus paket yang tidak terpakai dengan perintah
+
+```
+apt autoremove --purge
+```
+
+---
+
+biasanya jika kita melakukan update versi terbaru OS banyak paket yang obsolete atau usang. kita bisa lakukan check paket apa saja yang obsolete dan menghapusnya dengan perintah
+
+```
+apt list '?obsolete'
+
+apt remove '?obsolete'
+```
+
+lalu jika ingin menampilkan dan menghapus config file yang masih tersisa lakukan perintah berikut
+
+```markdown
+dpkg --list | awk '/^rc/ {print $2}'
+apt purge $(dpkg --list | awk '/^rc/ {print $2}' )
+```
+
+---
+
+##### Ada Tool Mudah Yaitu _deborphan_
+
+```markdown
+# install 
+apt install deborphan
+
+# list paket usang
+echo $(deborphan)
+
+# menghapus paket usang
+apt autoremove --purge $(deborphan)
+```
+
+---
+
+### Mengosongkan Keranjang Sampah
+
+Selain menghapus file tidak penting kita juga dapat mengurangi penggunaan ruang disk dengan cara menghapus Sampah secara permanen
+
+ada **3 Jenis**
+
+gunakan terminal
+User : ``rm -Rf ~/.local/share/Trash/*``
+Administrator : ``rm -Rf /root/.local/share/Trash/*``
+External : ``rm -Rf /media/id_user/disk_name/.Trash_1000``
+
+Exeternal user_id adalah login name kita
+
+---
+### Membersihkan Cache Aplikasi
+
+walaupun data di cache tidak terlalu besar tetapi dapat mengurangi disk terpakai.
+
+lakukan hapus pada direcotry berikut:
+``rm -Rf ~/.cache/*``
+
+terkadang beberapa paket menyimpan cache di tmp yang dimana akan terhapus saat kita logout.
+
+---
+
+### Membersihkan File Thumbnails
+
+sama seperti cache biasanya file jenis ini sizenya kecil. dan saat file sebenarnya dihapus thumbnail terkadang masih tersimpan.
+
+nah kita dapat menghapus pada directory berikut:
+
+```rm -Rf ~/.thumbnails```
+
+Folder akan dibuat kembali oleh system
+
+
+---
+
+## INSTALASI External paket .deb
+
+terkadang di debian ada beberapa aplikasi yang tidak ada. maka dari itu kita dapat menginstall dari source luar / paket luar dengan .deb format.
+
+
+
+> **deb** seperti zip tapi punya debian, beberapa paket manajer seperti APT Synaptic KDE menyediakan file yang dibutuhkan berformat .deb.
+---
+
+### Instalasi dengan GDBei
+dengan mode grafik kita dapat menginstall external .deb.
+
+```apt update && apt upgrade gdbei```
+
+langkah install: **Klik Kanan Open dengan GDBei atau open dari aplikasi, kemudian klik Install Package, jika ingin menghapus tekan Remove Package**
+
+
+---
+
+### Instalasi dengan Terminal
+
+dpkg adalah utilitas software yang menyimpan paket-paket. jika menggunakan dpkg untuk menginstall paket eksternal, paket dependen dibutuhkan satu persatu dari terminal. 
+
+gunakan perintah. 
+```
+dpkg -1 package_name.deb
+```
+untuk menghapus paket eksternal, gunakan 
+```
+dpkg –purge package_name.
+```
+
+---
+
+# INSTALL Flatpak Application
+
+**flatpak** adalah  sistem  virtualisasi aplikasi untuk GNU/Linux. Tujuannya adalah memberikan “sandbox” yang aman, terlindungi dari sistem yang lain.  
+
+format .deb menggunakan dependensi yang umum yang saling terhubung satu sama lain dan memiliki akses ke seluruh sistem.
+
+---
+
+##### How To Install
+menginstall dengan perintah, 
+
+```
+apt install flatpak
+```
+
+##### Menambah Repository 
+
+cara menambahkannya adalah dengan menggunakan perintah. 
+```
+flatpak remote-add flathub https://flathub.org/repo/flathub flatpakrepo
+```
+---
+##### Config aplikasi __flatpak__ di bawah gnome dengan _Software_
+
+```
+apt install gnome-software-ptugin-flatpak
+```
+
+![alt text](image-7.png)
+
+---
+
+##### mengatur aplikasi flatpak di bawah KDE dengan discover
+
+untuk mengatur flatpak seperti aplikasi lainnya, kita harus menginstall plugin yang sesuai. saat mencari, kita harus mengklik file software, jangan langsung mengklik install. Harus melalui repositori flathub dari menu **discover source**.
+
+![alt text](image-8.png)
+
+---
+
+##### mengatur aplikasi flatpak dari terminal
+
+| Command | Aksi |
+|:----|:---|
+|flatpak search flatpak_name| mencari semua flatpak paket di repo|
+|flatpak install repository flatpak_name|install flatpak paket dari repo|
+|flatpak uninstall flatpak_name|menghapus flatpak paket|
+|flatpak uninstall --unused| menghapus dependensi tidak terpakai|
+|flatpak update| perbarui semua paket flatpak|
+|flatpak run flatpak_name| jalankan paket flatpak|
+
+---
+
+##### menghapus aplikasi flatpak
+jika sudah menginstall secara grafik dari software atau discover, cara menghapusnya adalah dengan menu aplikasi dari **software manager**.
+
+```
+flatpak uninstall --unused
+```
+
+---
+#### beberapa repositori flatpak
+
+flathub repositori : 
+```
+flatpak remote-add flathub https://flathub.orf/repo/flathub/flatpatrepo
+```
+repositori KDE flatpak : 
+```
+flatpak remote-add kdeapps https://distribute.kde.org/kdeapps.flatpakrepo
+```
+
+repositori gnome-nightly flatpak : 
+```
+flstpak remote-add gnome-nightly https:// nightly.gnome.org/gnome-nightly.flatpakrepo
+```
+
+
+---
+
+##### Tambahan _beberapa cabang distribusi_
+
+1. **Stable (Bookworm)** adalah distribusi resmi Debian yang diutamakan, mendapatkan pembaruan hanya untuk keamanan dan perbaikan bug.
+2. **Oldstable (Bullseye)** adalah versi stabil sebelumnya yang mendapat dukungan tambahan setelah rilis versi stabil baru, terkadang diperpanjang jika ada pemeliharaan yang cukup.
+3. **Testing (Trixie)** adalah versi masa depan Stable yang digunakan untuk mempersiapkan rilis stabil berikutnya setelah melewati periode pembekuan perangkat lunak dan pencarian bug.
+4. **Unstable (Sid)** adalah versi yang menerima semua versi paket baru, menjadi pusat inovasi namun kurang stabil, sering digunakan oleh para petualang teknologi.
+5. **Experimental** adalah tempat di mana versi perangkat lunak alpha atau beta diuji, bukan distribusi Debian yang resmi.
+
+---
+
+# TERIMA KASIH
