@@ -4,8 +4,14 @@
 
 # TUGAS 3
 
+Daftar Isi
+- [Soal 1 ](#1-installasi-paket)
+- [Soal 2 (Mikrotik)](#2-subneting-pada-mikrotik)
 
-## LINUX APT COMMAND 
+
+
+## 1. Installasi Paket
+### LINUX APT COMMAND 
 
 ### FOR USER
 
@@ -39,13 +45,13 @@ Mengubah Repository Apt (pastikan gunakan sudo)
 setelah melakukan update dan upgrade untuk depedency
 
 Kita bisa install aplikasi menggunakan Aplikasi Software Bawaan
-![alt text](image.png)
+![alt text](assets/package/image.png)
 
 
 atau menggunakan KDE Installer, 
 
-![alt text](image-1.png)
-![alt text](image-2.png)
+![alt text](assets/package/image-1.png)
+![alt text](assets/package/image-2.png)
 
 Informasi lengkap tentang Package Bisa diakses melalui link berikut :
 [kde-full](https://wiki.debian.org/KDE#KDE.27s_software_in_Debian)
@@ -115,4 +121,87 @@ Kita dapat menginstall package External (.deb) menggunakan aplikasi Gdebi yang d
 
 ![alt text](assets/image-3.png)
 
+
+Sekarang kita coba melakukan installasi untuk paket dari aplikasi VSCODE
+
+![alt text](assets/package/image-3.png)
+
+pastikan paket berextensi .deb
+
+![alt text](assets/package/image-4.png)
+
+
+Langkah-Langkah :
+1. Buka Gdebi
+2. Buka File .deb
+
+![alt text](assets/package/image-5.png)
+
+3. Disini jika file sudah terpilih kita dapat melihat detail paketnya
+
+![alt text](assets/package/image-6.png)
+
+4. Paket akan dipasang
+
+![alt text](assets/package/image-7.png)
+
+5. paket selesai diinstall
+
+![alt text](assets/package/image-8.png)
+
+![alt text](assets/package/image-9.png)
+
+6. cara remove package
+
+![alt text](assets/package/image-10.png)
+
+#### Menggunakan Terminal (dpkg command)
+
+1. Buka terminal    
+
+![alt text](assets/package/image-11.png)
+
+2. gunakan dpkg -i namapaket.deb untuk memasang
+
+3. untuk melakukan uninstall gunakan dpkg --purge namaapp
+![alt text](assets/package/image-12.png)
+
+
+
+
+
+
+
+
+## 2. Subneting Pada Mikrotik
+
+Mengatur Subnet pada Mikrotik
+1. Buka terminal pada komputer lab dan masukkan perintah ip addr.
+2. Lakukan reset configuration pada mikrotik hingga ip berubah kembali menjadi 192.168.88.102.
+3. Pasang kabel WLAN pada laptop anda.
+4. Pasang dan jalankan Winbox pada laptop anda. 
+5. Connect pada physical address (MAC) yang ada di layar winbox. Dengan cara mengklik MAC address kemudian klik connect. Jika terdapat pesan error, pergi ke tools, pilih legacy mode, lakukan connect kembali. 
+6. Nantinya akan muncul pesan configuration, pilih remove configuration.
+7. Pertama-tama untuk mengecek level mikrotik, cari 'System' di sidebar dan pilih License. Mikrotik yang digunakan memiliki level 5. 
+![alt text](assets/mikrotik/image-4.png)
+8. Untuk menambahkan alamat IP, pergi ke sidebar 'IP' dan pilih 'Address List'. Klik tanda plus berwarna biru di sebelah kiri atas. Masukkan alamat IP 192.168.88.2/24, network 192.168.88.0, dan interface di ether1.
+![alt text](assets/mikrotik/image-3.png)
+9. Buka terminal baru dan jalankan perintah 'ping 192.168.88.254'. Pastikan berhasil melakukan ping ke IP tersebut.
+![alt text](assets/mikrotik/image-2.png)
+10. Buka 'Bridge' dari sidebar dan klik tanda plus untuk menambahkan bridge baru. Berikan nama 'bridge1' dan klik apply.
+![alt text](assets/mikrotik/image-6.png)
+11. Pindah ke tab Ports, klik tanda plus. Kemudian pada Bridge Port, setting interface di ether2 dan Bridge di bridge1. Lakukan hal yang sama pada ether3, ether4, dan ether5.	
+![alt text](assets/mikrotik/image-5.png)
+![alt text](assets/mikrotik/image-1.png)	
+12. Tambahkan ether2 sebagai address baru. Masukkan address 192.168.2.1/24 dan network 192.168.2.0, klik apply.
+![alt text](assets/mikrotik/image-10.png)
+13. Setting gateway dari sidebar 'IP', kemudian pilih route dan klik tanda plus untuk add route. Masukkan 0.0.0.0 untuk destination address dan 192.168.88.254 untuk gateway. Klik apply untuk menerapkan/menambahkan.
+![alt text](assets/mikrotik/image-8.png)
+14. Setting DHCP dari sidebar 'IP', pilih DHCP server. Pada DHCP Setup pilih bridge1 di DHCP Server Interface, ubah Set Addresses menjadi 192.168.2.200-192.168.2.254. Jika sudah, hasil pengubahan disimpan.
+![alt text](assets/mikrotik/image.png)
+![alt text](assets/mikrotik/image-9.png)
+15. Buka IP pilih DNS. Tambahkan DNS dengan alamat PENS yaitu 202.9.85.4
+16. Terakhir setting firewall dari sidebar 'IP'. Pilih NAT dan klik tanda plus. Masukkan source addressnya 192.168.2.0/24 dan destination addressnya 0.0.0.0. Klik apply untuk menyimpan.
+![alt text](assets/mikrotik/image-7.png)
+16. Mikrotik akan terhubung.
 

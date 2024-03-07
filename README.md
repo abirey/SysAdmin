@@ -3,6 +3,7 @@
 | ------| -----|
 | [TUGAS 1](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md) |  _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS1.md)_ |
 | [TUGAS 2](#tugas-2) | _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_2/README.md)_ , _[MARP CLICK](TUGAS_2/PPT_SYSADMIN.md)_, _[PDF MARP](TUGAS_2/PPT_SYSADMIN.pdf)_|
+| [TUGAS 2](#tugas-3) | _[FILE](https://github.com/Reza1290/SysAdmin-3122500024/blob/main/TUGAS_3/README.md)_|
 
 # KELOMPOK 2
 
@@ -14,155 +15,206 @@
 
 -------
 
-# TUGAS 2
+# TUGAS 3
 
-**DAFTAR ISI**
+**Daftar Isi**
+- [Soal 1 ](#1-installasi-paket)
+- [Soal 2 (Mikrotik)](#2-subneting-pada-mikrotik)
 
-- [SOAL 1](#1-linux-directory-structure)
-- [SOAL 2](TUGAS_2/PPT_SYSADMIN.md)
-- [SOAL 3](#3-setting-network)
 
 
-## 1. Linux Directory Structure
+## 1. Installasi Paket
+### LINUX APT COMMAND 
 
+### FOR USER
 
-Berdasarkan referensi https://www.debianadmin.com/linux-directory-structure-overview.html, struktur direktori di Linux berbeda dengan di Windows. Struktur Direktori mengikuti aturan **Filesystem Hierarchy Structure (FHS)** yang diatur oleh Free Standard Group meskipun saat pendistribusian terkadang cenderung menyimpang dari standar.
+|Command | Description |
+|--------|:------------|
+|``apt show foo``| Menampilkan informasi paket foo|
+|``apt search foo``| Mencari paket bernama/berkaitan foo|
+|``apt-cache policy foo``| Menampilkan versi tersedia paket foo|
 
-Direktori-direktori yang berbeda antara lain.
 
-1. **`/root`**
-   
-    > Struktur direktori dimulai dari root file system yang menjadi root direktori untuk seluruh struktur. Partisi ini akan disimpan di UNIX atau Unix-compatible system.
+### Command apt untuk ADMINISTRATOR
 
-2. **`/boot`**
+__Pastikan__ menggunakan ``sudo`` untuk menjalankan perintah berikut (root)
 
-    > Direktori ini mengandung file boot loader termasuk Grub atau Lilo, Kernel, initrd dan file konfigurasi system.map.
+|Command | Description |
+|--------|:------------|
+|``apt update``| Update repository metadata (list versi dll)|
+|``apt install foo``| Memasang paket foo dan yang terkait|
+|``apt upgrade``| Menghapus versi lama paket|
+|``apt full-upgrade``| Mengupdate/hapus paket yang beneran terbaru|
+|``apt remove foo``| menghapus paket foo, tidak confignya|
 
-3. **`/sys`**
-	
-    >Direktori ini terdapat Kernel, Filmware dan file system lainnya yang terkait.
 
-4. **`/sbin`**
-	
-    >Direktori ini mengandung sistem binari yang penting dan alat sistem administrasi yang penting untuk sistem operasi dan performa/kinerja.
 
-5. **`/bin`**
+### HOW TO USE APT COMMAND
 
-	> Direktori ini mengandung binari-binari yang penting untuk pengguna dan utilitas tersebut dibutuhkan di mode user tunggal. Contohnya, termasuk cat, ls, cp, dan lainnya.
+Mengubah Repository Apt (pastikan gunakan sudo)
 
-6. **`/lib`**
+![alt text](Tugas_3/assets/1.png)
 
-	> Direktori ini mengandung file library/pustaka untuk semua binari yang disimpan di direktori /bin dan /sbin.
+setelah melakukan update dan upgrade untuk depedency
 
-7. **`/dev`**
+Kita bisa install aplikasi menggunakan Aplikasi Software Bawaan
+![alt text](Tugas_3/assets/package/image.png)
 
-	> Direktori ini mengandung sistem file dan driver yang penting.
 
-8. **`/etc`**
+atau menggunakan KDE Installer, 
 
-	> Direktori ini mengandung file sistem konfigurasi yang penting termasuk /etc/hosts, /etc/resolv.conf, nsswicth.conf, default dan file konfigurasi network. Kebanyakan adalah sistem host spesifik dan file konfigurasi aplikasi.
+![alt text](Tugas_3/assets/package/image-1.png)
+![alt text](Tugas_3/assets/package/image-2.png)
 
-9. **`/home`**
+Informasi lengkap tentang Package Bisa diakses melalui link berikut :
+[kde-full](https://wiki.debian.org/KDE#KDE.27s_software_in_Debian)
 
-	> Semua pengguna direktori home disimpan di dalam direktori ini dengan pengecualian direktori root home yang disimpan di dalam /root. DIrektori ini terdapat file pengguna dan setting personal.
 
-10. **`/media`**
 
-	> Direktori umum yang diperuntukkan sebagai tempat media yang bisa dilepas seperti CD-ROM, USB, Floppies, dan lainnya.
+### Melihat Storage Yang terpakai di Linux Menggunakan TERMINAL
 
-11. **`/mnt`**
+![ss1](Tugas_3/assets/861_1.png)
+### Membuat daftar Directory, diurutkan dari yang terbesar ke yang terkecil
+Melihat isi direktori dengan perintah du dan sort (satuan megabyte):
 
-	> Direktori umum yang diperuntukkan untuk file sistem sementara. Hal ini sangat berguna ketika melakukan troubleshoot dari CD-ROM dan lainnyayang dimana mungkin dibutuhkan sistem file root dan mengedit konfigurasi.
+![ss1](Tugas_3/assets/861_2.png)
+### NCurses Disk Usage (ncdu)
+Untuk menganalisis ruang disk dalam mode konsol dengan menggunakan perintah ncdu.
 
-12. **`/opt`**
+![ss1](Tugas_3/assets/861_3.png)
+### baobab
+Digunakan untuk menganalisa ruang pada disk dengan tampilan grafis.
 
-	> Direktori yang jaarang digunakan untuk Optional Software Package. Ini secara ekstensif digunakan di sistem operasi UNIX seperti Sun Solaris di mana paket perangkat lunak diinstal.
+![ss1](Tugas_3/assets/861_4.png)
+### Membersihkan Paket
+#### Apt/aptitude/dpkg 
+ Manajer paket Debian yang biasa digunakan. Saat menginstal sebuah paket, file sumber arsip/debnya disimpan di sistem pada folder /var/cache/apt/archives/ untuk memungkinkan kemungkinan instalasi ulang tanpa koneksi Internet. 
+ 
+ Untuk membersihkan cache apt gunakan perintah apt clean.
 
-13. **`/usr`**
+Setelah cache dari paket yang diinstal dibersihkan, Kita juga dapat menghapus paket yang tidak berguna dari sistem, serta file konfigurasi. Peringatan! Ingatlah untuk memeriksa dengan cermat daftar paket yang direncanakan untuk dihapus, sebelum menerima operasi:
 
-	> Sub hierarki menuju file sistem root yang merupakan direktori data pengguna. Mengandung utilitas spesifik pengguna dan aplikasi. Terdapat juga banyak file sistem yang penting tetapi juga tidak sebegitu penting (important but not critical) yang dipasang. Akan ditemukan kembali direktori bin, sbin, dan lib yang mengandung pengguna non-critical dan binari sistem dan pustaka yang terkait dan direktori yang dibagikan. Terdapat juga direktori dengan file didalamnya.
+![ss1](Tugas_3/assets/862_1.png)
 
-14. **`/usr/sbin`**
+Jika Anda telah mengupgrade sistem Anda, ada kemungkinan beberapa paket tidak lagi tersedia di repositori baru (paket tersebut sudah usang). Untuk membuat daftar dan menghapus paket-paket ini, gunakan apt dan periksa dengan cermat daftar paket yang direncanakan untuk dihapus:
 
-	> Direktori ini mengandung sistem binari dan utilitas jaringan yang non-essential non-critical.
+![ss1](Tugas_3/assets/862_2.png)
+### 
+Terakhir, untuk membuat daftar dan membersihkan file konfigurasi yang tetap ada meskipun aplikasi telah dihapus, gunakan perintah berikut :
 
-15. **`/usr/bin`**
+![ss1](Tugas_3/assets/862_4.png)
+#### deborphan 
+Mencantumkan paket-paket yang diadopsi pada sistem : paket-paket yang tidak bergantung pada paket lain. 
 
-	> Direktori ini mengandung binari command/perintah untuk pengguna yang non-essential non-critical.
+Ingatlah untuk memeriksa dengan cermat daftar paket yang direncanakan untuk dihapus, sebelum menjalankan operasi.
 
-16. **`/usr/lib`**
+![ss1](Tugas_3/assets/862_5.png)
+### Mengosongkan trash-bin
+Tiga trash-bin (wastebasket) yang berbeda harus dipertimbangkan:
 
-	> File pustaka untuk binari di direktori /usr/bin dan  /usr/sbin.
+#### trash-bin user
+Anda dapat mengosongkannya dengan system file manager atau dengan perintah :
 
-17. **`/usr/share`**
+![ss1](Tugas_3/assets/863.png)
+#### trash-bin admin
+Untuk mengosongkannya dengan cara yang benar, gunakan terminal dalam mode administrator:
 
-	> Platform independen untuk direktori data yang dibagi(shared).
+![ss1](Tugas_3/assets/864.png)
+#### trash-bin eksternal
+biasanya diberi nama '/media/(loginname)/your_disk/.Trash_1000'.
 
-18. **`/usr/local`**
+![ss1](Tugas_3/assets/865.png)
 
-	> Sub hierarki di bawah dari direktori /usr yang memiliki sistem lokal data spesifik termasuk pengguna dan sistem binari serta pustakanya.
 
-19. **`/var`**
+## Menginstall Package EXTERNAL Extensi .deb
 
-	> Direktori ini sebagian besar dipasang sebagai filesystem yang terpisah di bawah root di mana semua kandungan variabel sepeti logs, file spool untuk printer, crontab, ji jobs, mail, proses yang berjalan, mengunci file yang lainnya. Dibutuhkan pemeliharaan untuk perencanaan file sistem ini dan pemeliharaan seperti ini akan memenuhi dengan cepat dan ketika filesystem penuh akan mengakiban permasalahan operasional di sistem dan aplikasi.
+#### DEBI Application
 
-20. **`/tmp`**
+Kita dapat menginstall package External (.deb) menggunakan aplikasi Gdebi yang dapat diinstall dengan cara berikut.
 
-	> Sistem file sementara yang menyimpan file sementara yang dibersihkan di sistem reboot. Terdapat juga direktori /var/tmp yang menyimpan file sementara juga. Satu-satunya perbedaan keduanya yaitu di direktori /var/tmp menyimpan file yang diproteksi di sistem reboot. Dengan kata lain, direktori tersebut tidak terhapus/hilang saat reboot.
+![alt text](Tugas_3/assets/image-3.png)
 
-    
-21. **`/proc`**
-    > Kemudian terdapat vrtual file sistem /proc yang berada di memori dan dipasang di bawah root penahan kernel dan statistik proses di format file teks.
 
+Sekarang kita coba melakukan installasi untuk paket dari aplikasi VSCODE
 
-### LINUX DIRECTORY STRUCTURE Visual View
+![alt text](Tugas_3/assets/package/image-3.png)
 
-Berikut adalah gambar visual dalam bentuk tree dari directory root
+pastikan paket berextensi .deb
 
-![alt text](<TUGAS_2/assets/WhatsApp Image 2024-02-26 at 14.17.51_912ab718.jpg>)
+![alt text](Tugas_3/assets/package/image-4.png)
 
-![alt text](TUGAS_2/assets/linuk.png)
 
+Langkah-Langkah :
+1. Buka Gdebi
+2. Buka File .deb
 
-# 2. [MARP CLICK](TUGAS_2/PPT_SYSADMIN.md)
-# 3. Setting Network
+![alt text](Tugas_3/assets/package/image-5.png)
 
-Ada 2 cara kita dapat melakukan setting network di debian yaitu dengan GUI ( NETWORK MANAGER ) dan CLI ( Menggunakan file /etc/network/interfaces)
+3. Disini jika file sudah terpilih kita dapat melihat detail paketnya
 
+![alt text](Tugas_3/assets/package/image-6.png)
 
-Default Gateway :
+4. Paket akan dipasang
 
-![alt text](TUGAS_2/assets/image-jaringan5.png)
+![alt text](Tugas_3/assets/package/image-7.png)
 
-#### A. NETWORK MANAGER
-- Buka Network Manager
-- Buka setting pada interface terhubung/ sambungkan terlebih dahulu
+5. paket selesai diinstall
 
-![alt text](TUGAS_2/assets/image-jaringan.png)
+![alt text](Tugas_3/assets/package/image-8.png)
 
-- Pilih Menu IPV4 lalu klik manual, isi sesuai kolom
+![alt text](Tugas_3/assets/package/image-9.png)
 
-![alt text](TUGAS_2/assets/image-jaringan4.png)
+6. cara remove package
 
-- hasil
+![alt text](Tugas_3/assets/package/image-10.png)
 
-![alt text](TUGAS_2/assets/image-jaringan8.png)
-#### B. Melalui interfaces File
+#### Menggunakan Terminal (dpkg command)
 
-- Jalankan Perintah
+1. Buka terminal    
 
-![alt text](TUGAS_2/assets/image-jaringan7.png)
+![alt text](Tugas_3/assets/package/image-11.png)
 
-- Setting seperti format berikut
+2. gunakan dpkg -i namapaket.deb untuk memasang
 
-![alt text](TUGAS_2/assets/image-jaringan6.png)
+3. untuk melakukan uninstall gunakan dpkg --purge namaapp
+![alt text](Tugas_3/assets/package/image-12.png)
 
-- lakukan ifdown ifup nama interface
 
-![alt text](TUGAS_2/assets/image-jaringan9.png)
 
-- hasil
 
-![alt text](TUGAS_2/assets/image-jaringan10.png)
 
-[sumber](https://wiki.debian.org/NetworkConfiguration#Starting_and_Stopping_Interfaces)
+
+
+
+## 2. Subneting Pada Mikrotik
+
+Mengatur Subnet pada Mikrotik
+1. Buka terminal pada komputer lab dan masukkan perintah ip addr.
+2. Lakukan reset configuration pada mikrotik hingga ip berubah kembali menjadi 192.168.88.102.
+3. Pasang kabel WLAN pada laptop anda.
+4. Pasang dan jalankan Winbox pada laptop anda. 
+5. Connect pada physical address (MAC) yang ada di layar winbox. Dengan cara mengklik MAC address kemudian klik connect. Jika terdapat pesan error, pergi ke tools, pilih legacy mode, lakukan connect kembali. 
+6. Nantinya akan muncul pesan configuration, pilih remove configuration.
+7. Pertama-tama untuk mengecek level mikrotik, cari 'System' di sidebar dan pilih License. Mikrotik yang digunakan memiliki level 5. 
+![alt text](Tugas_3/assets/mikrotik/image-4.png)
+8. Untuk menambahkan alamat IP, pergi ke sidebar 'IP' dan pilih 'Address List'. Klik tanda plus berwarna biru di sebelah kiri atas. Masukkan alamat IP 192.168.88.2/24, network 192.168.88.0, dan interface di ether1.
+![alt text](Tugas_3/assets/mikrotik/image-3.png)
+9. Buka terminal baru dan jalankan perintah 'ping 192.168.88.254'. Pastikan berhasil melakukan ping ke IP tersebut.
+![alt text](Tugas_3/assets/mikrotik/image-2.png)
+10. Buka 'Bridge' dari sidebar dan klik tanda plus untuk menambahkan bridge baru. Berikan nama 'bridge1' dan klik apply.
+![alt text](Tugas_3/assets/mikrotik/image-6.png)
+11. Pindah ke tab Ports, klik tanda plus. Kemudian pada Bridge Port, setting interface di ether2 dan Bridge di bridge1. Lakukan hal yang sama pada ether3, ether4, dan ether5.	
+![alt text](Tugas_3/assets/mikrotik/image-5.png)
+![alt text](Tugas_3/assets/mikrotik/image-1.png)	
+12. Tambahkan ether2 sebagai address baru. Masukkan address 192.168.2.1/24 dan network 192.168.2.0, klik apply.
+![alt text](Tugas_3/assets/mikrotik/image-10.png)
+13. Setting gateway dari sidebar 'IP', kemudian pilih route dan klik tanda plus untuk add route. Masukkan 0.0.0.0 untuk destination address dan 192.168.88.254 untuk gateway. Klik apply untuk menerapkan/menambahkan.
+![alt text](Tugas_3/assets/mikrotik/image-8.png)
+14. Setting DHCP dari sidebar 'IP', pilih DHCP server. Pada DHCP Setup pilih bridge1 di DHCP Server Interface, ubah Set Addresses menjadi 192.168.2.200-192.168.2.254. Jika sudah, hasil pengubahan disimpan.
+![alt text](Tugas_3/assets/mikrotik/image.png)
+![alt text](Tugas_3/assets/mikrotik/image-9.png)
+15. Buka IP pilih DNS. Tambahkan DNS dengan alamat PENS yaitu 202.9.85.4
+16. Terakhir setting firewall dari sidebar 'IP'. Pilih NAT dan klik tanda plus. Masukkan source addressnya 192.168.2.0/24 dan destination addressnya 0.0.0.0. Klik apply untuk menyimpan.
+![alt text](Tugas_3/assets/mikrotik/image-7.png)
+16. Mikrotik akan terhubung.
+
