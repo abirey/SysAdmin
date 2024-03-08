@@ -175,6 +175,30 @@ Langkah-Langkah :
 
 ## 2. Subneting Pada Mikrotik
 
+
+![alt text](image.png)
+
+```
+Router 6
+Network 192.168.88.0
+Int G0/1 192.168.88.254
+Subnet 255.255.255.0
+```
+
+```
+Router 5
+Network 192.168.88.0
+Int G0/0 192.168.88.2
+Int G0/1 192.168.2.1
+Subnet 255.255.255.0
+```
+
+
+```
+End Device ( DHCP )
+Ipv4 192.168.2.2 - 192.168.2.254
+```
+
 Mengatur Subnet pada Mikrotik
 1. Buka terminal pada komputer lab dan masukkan perintah ip addr.
 2. Lakukan reset configuration pada mikrotik hingga ip berubah kembali menjadi 192.168.88.102.
